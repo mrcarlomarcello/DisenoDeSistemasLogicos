@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<truthTable>
+  <variables>
+    <variable name="B4"/>
+    <variable name="B3"/>
+    <variable name="B2"/>
+    <variable name="B1"/>
+    <variable name="B0"/>
+  </variables>
+  <results>
+    <result>
+      <name>a1</name>
+      <values class="BoolTable">
+        <table>AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>b1</name>
+      <values class="BoolTable">
+        <table>AQEBAQEBAQEBAQAAAAAAAAAAAAAAAAABAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>c1</name>
+      <values class="BoolTable">
+        <table>AQEBAQEBAQEBAQAAAAAAAAAAAAAAAAABAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>d1</name>
+      <values class="BoolTable">
+        <table>AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>e1</name>
+      <values class="BoolTable">
+        <table>AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>f1</name>
+      <values class="BoolTable">
+        <table>AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>g1</name>
+      <values class="BoolTable">
+        <table>AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>a2</name>
+      <values class="BoolTable">
+        <table>AQEAAAEAAAAAAAEBAAABAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>b2</name>
+      <values class="BoolTable">
+        <table>AQAAAAABAQAAAAEAAAABAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>c2</name>
+      <values class="BoolTable">
+        <table>AQABAAAAAAAAAAEAAQABAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>d2</name>
+      <values class="BoolTable">
+        <table>AQEAAAEAAAEAAAEBAAABAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>e2</name>
+      <values class="BoolTable">
+        <table>AQEAAQEBAAEAAQEBAAEBAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>f2</name>
+      <values class="BoolTable">
+        <table>AQEBAQAAAAEAAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+    <result>
+      <name>g2</name>
+      <values class="BoolTable">
+        <table>AAEAAAAAAAEAAAABAQABAQEBAQEBAQEBAQEBAQEBAQE=</table>
+      </values>
+    </result>
+  </results>
+</truthTable>
