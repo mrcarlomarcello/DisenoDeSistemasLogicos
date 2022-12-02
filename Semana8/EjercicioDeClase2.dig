@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Complemento1and2</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>A:5,op:2</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>//segundo ejercicio
+module Complemento1and2(
+    input [4:0] A,
+    input [1:0]op,
+    output reg [4:0] C1
+);
+
+    reg[4:0] one;
+    initial begin
+        one=1;
+    end
+
+    always @ (*)
+    begin
+        
+        if ( op == 0 ) // C1 es igual A
+        begin
+            C1 = A;
+        end
+        if ( op == 1)  // C1 es complemento a1 A
+        begin
+            C1 = ~A;
+        end
+        if ( op == 2)  // C1 es complemento a2 A
+        begin
+            C1 = (~A) + one;
+        end        
+    end
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>C1:5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="40" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>c1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>c1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Suma</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>A:5,B:5</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>//segundo ejercicio
+module Suma(
+    input [4:0] A,
+    input [4:0] B,
+    output reg [5:0] C1
+);
+
+    reg[4:0] one;
+    initial begin
+        one=1;
+    end
+
+    always @ (*)
+    begin
+        C1 = A + B;                
+    end
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>C1:6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="40" y="540"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>c2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>c2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="540"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>6</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Multiplicacion</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>A:5,B:5</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>//segundo ejercicio
+module Multiplicacion(
+    input [4:0] A,
+    input [4:0] B,
+    output reg [7:0] C1
+);
+
+    reg[4:0] one;
+    initial begin
+        one=1;
+    end
+
+    always @ (*)
+    begin
+        C1 = A * B;                
+    end
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>C1:8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="40" y="940"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>c4</string>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="960"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>c4</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="1040"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="940"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="980"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="1040"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Division</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>A:5,B:5</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>//segundo ejercicio
+module Division(
+    input [4:0] A,
+    input [4:0] B,
+    output reg [7:0] C1
+);
+
+    reg[4:0] one;
+    initial begin
+        one=1;
+    end
+
+    always @ (*)
+    begin
+        C1 = A / B;                
+    end
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>C1:8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="1140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>c5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="420" y="1160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>c5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="1240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="20" y="1140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="-20" y="1180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="280" y="1240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Normal, C1 y C2 (0,1,2)</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>14</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-380" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Resta</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>A:5,B:5</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>//segundo ejercicio
+module Resta(
+    input [4:0] A,
+    input [4:0] B,
+    output reg [5:0] C1
+);
+
+    reg[4:0] one;
+    initial begin
+        one=1;
+    end
+
+    always @ (*)
+    begin
+        C1 = A - B;                
+    end
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>C1:6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="40" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>c3</string>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>c3</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="780"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>6</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-120" y="720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-120" y="760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-120" y="920"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-120" y="960"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-100" y="1120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-100" y="1160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-120" y="520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-120" y="560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>exampleCase</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>A:5,op:2</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module exampleCase(
+    input [4:0] A,
+    input [1:0]op,
+    output reg [4:0] Result
+);
+
+always @ (*)
+begin
+    case (op)
+        1: 
+            Result = A *2;
+        2:
+            Result = A *3;        
+        default: 
+            Result = A;
+    endcase
+end
+
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>Result:5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="1380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="-20" y="1380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-80" y="1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>c6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="1500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="1500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>c6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="1400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>cicloFor</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>num:5,calcular</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module cicloFor(
+    input [4:0] num,
+    input calcular,
+    output reg [6:0] Result
+);
+
+reg[4:0] i;
+
+always @ (posedge calcular)
+begin
+    begin
+        Result=0;
+        i=0;
+    end
+
+    for (i =0 ; i&lt;=num; i++)
+    begin
+        Result = Result + i ;
+    end    
+end
+
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>Result:7</string>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="1600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="1600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>c7</string>
+        </entry>
+      </elementAttributes>
+      <pos x="280" y="1720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="340" y="1720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>c7</string>
+        </entry>
+      </elementAttributes>
+      <pos x="460" y="1620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes/>
+      <pos x="-40" y="1640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>factorial</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>num:5,calcular</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module factorial(
+    input [4:0] num,
+    input calcular,
+    output reg [31:0] Result
+);
+
+reg[4:0] i;
+
+always @ (posedge calcular)
+begin
+    begin
+        Result=1;
+        i=0;
+    end
+
+    for (i = num ; i&gt;0; i--)
+    begin
+        Result = Result * i ;
+    end    
+end
+
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>Result:32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="1820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="20" y="1820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>c8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="1940"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="1940"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>c8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="1840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes/>
+      <pos x="-20" y="1860"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="360" y="320"/>
+      <p2 x="400" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="640"/>
+      <p2 x="260" y="640"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="960"/>
+      <p2 x="400" y="960"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="1600"/>
+      <p2 x="80" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="-40" y="580"/>
+      <p2 x="40" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="-20" y="1860"/>
+      <p2 x="100" y="1860"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="840"/>
+      <p2 x="260" y="840"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="1160"/>
+      <p2 x="420" y="1160"/>
+    </wire>
+    <wire>
+      <p1 x="-40" y="780"/>
+      <p2 x="40" y="780"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="1420"/>
+      <p2 x="60" y="1420"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="400"/>
+      <p2 x="260" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="1040"/>
+      <p2 x="260" y="1040"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="340"/>
+      <p2 x="40" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-40" y="980"/>
+      <p2 x="40" y="980"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="1620"/>
+      <p2 x="460" y="1620"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="1940"/>
+      <p2 x="360" y="1940"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="1240"/>
+      <p2 x="280" y="1240"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="1820"/>
+      <p2 x="100" y="1820"/>
+    </wire>
+    <wire>
+      <p1 x="-20" y="1180"/>
+      <p2 x="60" y="1180"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="540"/>
+      <p2 x="40" y="540"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="1500"/>
+      <p2 x="320" y="1500"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="740"/>
+      <p2 x="40" y="740"/>
+    </wire>
+    <wire>
+      <p1 x="-20" y="1380"/>
+      <p2 x="60" y="1380"/>
+    </wire>
+    <wire>
+      <p1 x="-40" y="1640"/>
+      <p2 x="80" y="1640"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="300"/>
+      <p2 x="40" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="940"/>
+      <p2 x="40" y="940"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="1840"/>
+      <p2 x="480" y="1840"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="560"/>
+      <p2 x="400" y="560"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="1140"/>
+      <p2 x="60" y="1140"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="1720"/>
+      <p2 x="340" y="1720"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="760"/>
+      <p2 x="400" y="760"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="1400"/>
+      <p2 x="440" y="1400"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>

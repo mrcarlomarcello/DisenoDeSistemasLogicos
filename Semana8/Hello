@@ -7,9 +7,9 @@
 :vpi_module "/usr/lib/ivl/vhdl_textio.vpi";
 :vpi_module "/usr/lib/ivl/v2005_math.vpi";
 :vpi_module "/usr/lib/ivl/va_math.vpi";
-S_0x560647e514c0 .scope module, "hello" "hello" 2 3;
+S_0x55edd08bc4c0 .scope module, "hello" "hello" 2 3;
  .timescale 0 0;
-    .scope S_0x560647e514c0;
+    .scope S_0x55edd08bc4c0;
 T_0 ;
     %vpi_call 2 6 "$display", "Hello, World" {0 0 0};
     %vpi_call 2 7 "$display", "I am an Icarus Verilog Program." {0 0 0};
