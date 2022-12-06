@@ -19,8 +19,7 @@ initial begin
         horasDiIzq = 0;
 end
 
-always @ (posedge clk)
-begin
+always @ (posedge clk) begin
                
         if (segundoDer == 9)
         begin
@@ -28,8 +27,10 @@ begin
             segundoIzq = segundoIzq + 1;
             if(segundoIzq == 6)
             begin
+
                 segundoIzq <= 0;
                 minutosDer = minutosDer + 1;
+                
                 if (minutosDer == 10)
                 begin
                     minutosDer <= 0;
@@ -44,8 +45,9 @@ begin
                             horasDiDer <=0;
                             horasDiIzq = horasDiIzq + 1;                            
                         end                        
-                    end
+                    end                    
                 end
+
             end                        
         end
         else
@@ -53,8 +55,7 @@ begin
             segundoDer = segundoDer + 1;
         end
         if(horasDiIzq == 2 && horasDiDer ==4)
-        begin 
-            //horasDiIzq <= 0;
+        begin             
             segundoDer <= 0;
             segundoIzq <= 0;
             minutosDer <= 0;
@@ -63,9 +64,8 @@ begin
             horasDiIzq <= 0;
         end                                 
 end
-
-always @ (posedge minutos)
-begin
+//clicker de los minutos
+always @ (posedge minutos) begin
     minutosDer = minutosDer + 1;
     if (minutosDer == 10)
     begin
@@ -86,8 +86,7 @@ begin
 
     //checks if 24 para que resetee
     if(horasDiIzq == 2 && horasDiDer ==4)
-    begin 
-        //horasDiIzq <= 0;
+    begin         
         segundoDer <= 0;
         segundoIzq <= 0;
         minutosDer <= 0;
@@ -95,11 +94,9 @@ begin
         horasDiDer <= 0;
         horasDiIzq <= 0;
     end
-    
 end
-
-always @ (posedge horas)
-begin
+//clicker de las horas
+always @ (posedge horas) begin
     horasDiDer = horasDiDer +1;
     if(horasDiDer == 10)
     begin
@@ -109,8 +106,7 @@ begin
 
     //checks if 24 para que resetee
     if(horasDiIzq == 2 && horasDiDer ==4)
-    begin 
-        //horasDiIzq <= 0;
+    begin         
         segundoDer <= 0;
         segundoIzq <= 0;
         minutosDer <= 0;

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>ARRAY</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>pos:5</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module ARRAY(
+    input [4:0] pos,
+    output reg [7:0] salida
+);
+    //data         //array size
+reg [7:0] vector [5:0];
+
+initial begin
+    vector [0] = 56;
+    vector [1] = 189;
+    vector [2] = 190;
+    vector [3] = 221;
+    vector [4] = 155;
+    vector [5] = 235;
+
+end
+
+always @ (*)
+begin
+    salida = vector[pos];
+end
+
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>salida:8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="780" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>BubbleSort</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>dato:5,pos:4,almacenar,ordenar,show</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module BubbleSort(
+    input [4:0] dato,
+    input [3:0] pos,
+    input almacenar,
+    input ordenar,    
+    input show,
+    output reg [4:0]resultado
+);
+    //data         //array size
+reg [4:0] vector [15:0];
+// temp
+reg [4:0] temporal;
+
+//variables para el ciclo 
+reg [3:0] i;
+reg [3:0] j;
+
+initial begin
+    vector [0] = 0;
+    vector [1] = 0;
+    vector [2] = 0;
+    vector [3] = 0;
+    vector [4] = 0;
+    vector [5] = 0;
+    vector [6] = 0;
+    vector [7] = 0;
+    vector [8] = 0;
+    vector [9] = 0;
+    vector [10] = 0;
+    vector [11] = 0;
+    vector [12] = 0;
+    vector [13] = 0;
+    vector [14] = 0;
+    vector [15] = 0;
+end
+
+always @ (posedge almacenar) begin
+    vector[pos] = dato;
+    resultado = vector[pos];
+end
+
+always @ (posedge show) begin
+    resultado = vector[pos];
+end
+
+always @ (pos) begin
+    resultado = vector[pos];
+end
+
+always @ (posedge ordenar) begin
+    
+    for (i = 0; i &lt; 16 - 1; i++)
+    begin
+
+        // Last i elements are already in place
+        for (j = 0; j &lt; 16 - i - 1; j++)
+        begin
+            if (vector[j] &gt; vector[j + 1])
+            begin
+                temporal = vector[j];
+                vector[j] = vector[j + 1];
+                vector[j + 1] = temporal;
+                
+            end
+        end
+    end  
+end
+
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>resultado:5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="520" y="720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="980" y="760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>4</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes/>
+      <pos x="280" y="780"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes/>
+      <pos x="220" y="800"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Button</elementName>
+      <elementAttributes/>
+      <pos x="340" y="760"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="720" y="400"/>
+      <p2 x="780" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="400"/>
+      <p2 x="400" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="720"/>
+      <p2 x="580" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="800"/>
+      <p2 x="580" y="800"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="740"/>
+      <p2 x="580" y="740"/>
+    </wire>
+    <wire>
+      <p1 x="900" y="760"/>
+      <p2 x="980" y="760"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="760"/>
+      <p2 x="580" y="760"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="780"/>
+      <p2 x="580" y="780"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
