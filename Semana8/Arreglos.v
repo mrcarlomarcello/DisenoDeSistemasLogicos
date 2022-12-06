@@ -91,3 +91,45 @@ always @ (posedge ordenar) begin
 end
 
 endmodule
+
+module ASCII(
+    input clockcito,
+    output reg [7:0] letra
+);
+
+//variable de letra
+reg [7:0] R;
+
+always @ (posedge clockcito) begin
+    
+    R = $urandom % 127;
+    letra = R;
+end
+endmodule
+
+module ABC(
+    input clockcito,
+    output reg [7:0] letra
+);
+
+//variable de letra
+reg [7:0] R;
+
+always @ (posedge clockcito) begin
+    
+    R = $urandom % 3;
+    if(R == 1)
+    begin
+        letra = 65;
+    end
+    else if( R == 2)
+    begin
+        letra = 66;
+    end
+    else
+    begin
+        letra = 67;
+    end
+    
+end
+endmodule

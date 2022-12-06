@@ -238,8 +238,226 @@ endmodule</string>
       <elementAttributes/>
       <pos x="340" y="760"/>
     </visualElement>
+    <visualElement>
+      <elementName>Terminal</elementName>
+      <elementAttributes/>
+      <pos x="0" y="600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes/>
+      <pos x="-40" y="640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Clock</elementName>
+      <elementAttributes>
+        <entry>
+          <string>runRealTime</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-780" y="600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ASCII</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>clockcito</string>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module ASCII(
+    input clockcito,
+    output reg [7:0] letra
+);
+
+//variable de letra
+reg [7:0] R;
+
+always @ (posedge clockcito) begin
+    
+    R = $urandom % 127;
+    letra = R;
+end
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>letra:8</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>6</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-260" y="560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Terminal</elementName>
+      <elementAttributes/>
+      <pos x="20" y="1000"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes/>
+      <pos x="-20" y="1040"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>ABC</string>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>clockcito</string>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module ABC(
+    input clockcito,
+    output reg [7:0] letra
+);
+
+//variable de letra
+reg [7:0] R;
+
+always @ (posedge clockcito) begin
+    
+    R = $urandom % 3;
+    if(R == 1)
+    begin
+        letra = 65;
+    end
+    else if( R == 2)
+    begin
+        letra = 66;
+    end
+    else
+    begin
+        letra = 67;
+    end
+    
+end
+endmodule</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>letra:8</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>6</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-240" y="960"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-480" y="600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="1000"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes/>
+      <pos x="-640" y="640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes/>
+      <pos x="-540" y="1000"/>
+    </visualElement>
   </visualElements>
   <wires>
+    <wire>
+      <p1 x="220" y="800"/>
+      <p2 x="580" y="800"/>
+    </wire>
+    <wire>
+      <p1 x="-40" y="640"/>
+      <p2 x="0" y="640"/>
+    </wire>
+    <wire>
+      <p1 x="-640" y="640"/>
+      <p2 x="-600" y="640"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="640"/>
+      <p2 x="-480" y="640"/>
+    </wire>
+    <wire>
+      <p1 x="-280" y="960"/>
+      <p2 x="-240" y="960"/>
+    </wire>
+    <wire>
+      <p1 x="-120" y="960"/>
+      <p2 x="-60" y="960"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="740"/>
+      <p2 x="580" y="740"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="1000"/>
+      <p2 x="20" y="1000"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="1000"/>
+      <p2 x="-540" y="1000"/>
+    </wire>
+    <wire>
+      <p1 x="-500" y="1000"/>
+      <p2 x="-440" y="1000"/>
+    </wire>
+    <wire>
+      <p1 x="-400" y="620"/>
+      <p2 x="-300" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="620"/>
+      <p2 x="0" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="780"/>
+      <p2 x="580" y="780"/>
+    </wire>
+    <wire>
+      <p1 x="-20" y="1040"/>
+      <p2 x="20" y="1040"/>
+    </wire>
+    <wire>
+      <p1 x="-740" y="1040"/>
+      <p2 x="-440" y="1040"/>
+    </wire>
     <wire>
       <p1 x="720" y="400"/>
       <p2 x="780" y="400"/>
@@ -253,12 +471,12 @@ endmodule</string>
       <p2 x="580" y="720"/>
     </wire>
     <wire>
-      <p1 x="220" y="800"/>
-      <p2 x="580" y="800"/>
+      <p1 x="-300" y="560"/>
+      <p2 x="-260" y="560"/>
     </wire>
     <wire>
-      <p1 x="400" y="740"/>
-      <p2 x="580" y="740"/>
+      <p1 x="-140" y="560"/>
+      <p2 x="-80" y="560"/>
     </wire>
     <wire>
       <p1 x="900" y="760"/>
@@ -269,8 +487,48 @@ endmodule</string>
       <p2 x="580" y="760"/>
     </wire>
     <wire>
-      <p1 x="280" y="780"/>
-      <p2 x="580" y="780"/>
+      <p1 x="-80" y="600"/>
+      <p2 x="0" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="-780" y="600"/>
+      <p2 x="-740" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="-740" y="600"/>
+      <p2 x="-480" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="-360" y="1020"/>
+      <p2 x="-280" y="1020"/>
+    </wire>
+    <wire>
+      <p1 x="-280" y="1020"/>
+      <p2 x="20" y="1020"/>
+    </wire>
+    <wire>
+      <p1 x="-740" y="600"/>
+      <p2 x="-740" y="1040"/>
+    </wire>
+    <wire>
+      <p1 x="-280" y="960"/>
+      <p2 x="-280" y="1020"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="640"/>
+      <p2 x="-600" y="1000"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="560"/>
+      <p2 x="-300" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="960"/>
+      <p2 x="-60" y="1000"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="560"/>
+      <p2 x="-80" y="600"/>
     </wire>
   </wires>
   <measurementOrdering/>
