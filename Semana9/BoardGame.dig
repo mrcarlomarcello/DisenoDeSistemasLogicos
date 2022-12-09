@@ -2691,7 +2691,7 @@
           <intFormat>decSigned</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="-1980" y="3960"/>
+      <pos x="-2060" y="3960"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -5205,7 +5205,7 @@ endmodule</string>
     </wire>
     <wire>
       <p1 x="-2240" y="3960"/>
-      <p2 x="-1980" y="3960"/>
+      <p2 x="-2060" y="3960"/>
     </wire>
     <wire>
       <p1 x="-4460" y="2940"/>
