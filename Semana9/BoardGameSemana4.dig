@@ -61,7 +61,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>b0</string>
+          <string>b0s2</string>
         </entry>
       </elementAttributes>
       <pos x="500" y="240"/>
@@ -71,7 +71,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>b1</string>
+          <string>b1s2</string>
         </entry>
       </elementAttributes>
       <pos x="500" y="260"/>
@@ -81,7 +81,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>b2</string>
+          <string>b2s2</string>
         </entry>
       </elementAttributes>
       <pos x="500" y="280"/>
@@ -91,7 +91,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>b3</string>
+          <string>b3s2</string>
         </entry>
       </elementAttributes>
       <pos x="500" y="300"/>
@@ -101,7 +101,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>b4</string>
+          <string>b4s2</string>
         </entry>
       </elementAttributes>
       <pos x="500" y="500"/>
@@ -111,7 +111,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>b5</string>
+          <string>b5s2</string>
         </entry>
       </elementAttributes>
       <pos x="500" y="520"/>
@@ -121,7 +121,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>b6</string>
+          <string>b6s2</string>
         </entry>
       </elementAttributes>
       <pos x="500" y="540"/>
@@ -131,7 +131,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>b7</string>
+          <string>b7s2</string>
         </entry>
       </elementAttributes>
       <pos x="500" y="560"/>
@@ -225,7 +225,7 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b3</string>
+          <string>b3s2</string>
         </entry>
       </elementAttributes>
       <pos x="1560" y="640"/>
@@ -235,11 +235,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[22]/elementAttributes/entry/rotation"/>
+          <rotation rotation="2"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b7</string>
+          <string>b7s2</string>
         </entry>
       </elementAttributes>
       <pos x="1560" y="680"/>
@@ -253,7 +253,7 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b0</string>
+          <string>b0s2</string>
         </entry>
       </elementAttributes>
       <pos x="1640" y="1040"/>
@@ -267,7 +267,7 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b4</string>
+          <string>b4s2</string>
         </entry>
       </elementAttributes>
       <pos x="1540" y="1020"/>
@@ -277,11 +277,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[24]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b5</string>
+          <string>b5s2</string>
         </entry>
       </elementAttributes>
       <pos x="1400" y="1020"/>
@@ -291,11 +291,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[24]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b6</string>
+          <string>b6s2</string>
         </entry>
       </elementAttributes>
       <pos x="1240" y="1020"/>
@@ -305,11 +305,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[24]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b7</string>
+          <string>b7s2</string>
         </entry>
       </elementAttributes>
       <pos x="1080" y="1020"/>
@@ -323,7 +323,7 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b3</string>
+          <string>b3s2</string>
         </entry>
       </elementAttributes>
       <pos x="-240" y="1040"/>
@@ -337,7 +337,7 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b4</string>
+          <string>b4s2</string>
         </entry>
       </elementAttributes>
       <pos x="-340" y="1020"/>
@@ -347,11 +347,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[30]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b5</string>
+          <string>b5s2</string>
         </entry>
       </elementAttributes>
       <pos x="-420" y="1020"/>
@@ -361,11 +361,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[30]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b6</string>
+          <string>b6s2</string>
         </entry>
       </elementAttributes>
       <pos x="-500" y="1020"/>
@@ -375,11 +375,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[30]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b7</string>
+          <string>b7s2</string>
         </entry>
       </elementAttributes>
       <pos x="-580" y="1020"/>
@@ -501,117 +501,7 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b2</string>
-        </entry>
-      </elementAttributes>
-      <pos x="580" y="2200"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>b4</string>
-        </entry>
-      </elementAttributes>
-      <pos x="480" y="2180"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation reference="../../../../visualElement[45]/elementAttributes/entry/rotation"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>b5</string>
-        </entry>
-      </elementAttributes>
-      <pos x="400" y="2180"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation reference="../../../../visualElement[45]/elementAttributes/entry/rotation"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>b6</string>
-        </entry>
-      </elementAttributes>
-      <pos x="320" y="2180"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation reference="../../../../visualElement[45]/elementAttributes/entry/rotation"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>b7</string>
-        </entry>
-      </elementAttributes>
-      <pos x="240" y="2180"/>
-    </visualElement>
-    <visualElement>
-      <elementName>And</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
-        </entry>
-      </elementAttributes>
-      <pos x="520" y="2320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>And</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
-        </entry>
-      </elementAttributes>
-      <pos x="440" y="2320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>And</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
-        </entry>
-      </elementAttributes>
-      <pos x="360" y="2320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>And</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
-        </entry>
-      </elementAttributes>
-      <pos x="280" y="2320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>b1</string>
+          <string>b1s2</string>
         </entry>
       </elementAttributes>
       <pos x="540" y="1200"/>
@@ -621,11 +511,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[53]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b4</string>
+          <string>b4s2</string>
         </entry>
       </elementAttributes>
       <pos x="440" y="1180"/>
@@ -635,11 +525,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[53]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b5</string>
+          <string>b5s2</string>
         </entry>
       </elementAttributes>
       <pos x="360" y="1180"/>
@@ -649,11 +539,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[53]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b6</string>
+          <string>b6s2</string>
         </entry>
       </elementAttributes>
       <pos x="280" y="1180"/>
@@ -663,11 +553,11 @@
       <elementAttributes>
         <entry>
           <string>rotation</string>
-          <rotation reference="../../../../visualElement[53]/elementAttributes/entry/rotation"/>
+          <rotation rotation="1"/>
         </entry>
         <entry>
           <string>NetName</string>
-          <string>b7</string>
+          <string>b7s2</string>
         </entry>
       </elementAttributes>
       <pos x="200" y="1180"/>
@@ -938,27 +828,121 @@
       </elementAttributes>
       <pos x="1360" y="2560"/>
     </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>b2s2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-260" y="1440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>b4s2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-360" y="1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>b5s2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>b6s2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-520" y="1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>b7s2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-600" y="1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="-320" y="1560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="-400" y="1560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="-480" y="1560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="-560" y="1560"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
       <p1 x="1560" y="640"/>
       <p2 x="1640" y="640"/>
-    </wire>
-    <wire>
-      <p1 x="280" y="2240"/>
-      <p2 x="360" y="2240"/>
-    </wire>
-    <wire>
-      <p1 x="440" y="2240"/>
-      <p2 x="520" y="2240"/>
-    </wire>
-    <wire>
-      <p1 x="360" y="2240"/>
-      <p2 x="440" y="2240"/>
-    </wire>
-    <wire>
-      <p1 x="520" y="2240"/>
-      <p2 x="580" y="2240"/>
     </wire>
     <wire>
       <p1 x="460" y="260"/>
@@ -979,6 +963,22 @@
     <wire>
       <p1 x="1140" y="1480"/>
       <p2 x="1220" y="1480"/>
+    </wire>
+    <wire>
+      <p1 x="-560" y="1480"/>
+      <p2 x="-480" y="1480"/>
+    </wire>
+    <wire>
+      <p1 x="-480" y="1480"/>
+      <p2 x="-400" y="1480"/>
+    </wire>
+    <wire>
+      <p1 x="-400" y="1480"/>
+      <p2 x="-320" y="1480"/>
+    </wire>
+    <wire>
+      <p1 x="-320" y="1480"/>
+      <p2 x="-260" y="1480"/>
     </wire>
     <wire>
       <p1 x="460" y="1420"/>
@@ -1225,6 +1225,10 @@
       <p2 x="1280" y="2560"/>
     </wire>
     <wire>
+      <p1 x="-260" y="1440"/>
+      <p2 x="-260" y="1480"/>
+    </wire>
+    <wire>
       <p1 x="1540" y="1020"/>
       <p2 x="1540" y="1160"/>
     </wire>
@@ -1235,6 +1239,10 @@
     <wire>
       <p1 x="900" y="2380"/>
       <p2 x="900" y="2420"/>
+    </wire>
+    <wire>
+      <p1 x="-520" y="1420"/>
+      <p2 x="-520" y="1560"/>
     </wire>
     <wire>
       <p1 x="1160" y="1600"/>
@@ -1249,10 +1257,6 @@
       <p2 x="1160" y="2420"/>
     </wire>
     <wire>
-      <p1 x="520" y="2240"/>
-      <p2 x="520" y="2320"/>
-    </wire>
-    <wire>
       <p1 x="1420" y="1220"/>
       <p2 x="1420" y="1460"/>
     </wire>
@@ -1261,12 +1265,12 @@
       <p2 x="1420" y="2300"/>
     </wire>
     <wire>
-      <p1 x="400" y="1240"/>
-      <p2 x="400" y="1320"/>
+      <p1 x="-400" y="1480"/>
+      <p2 x="-400" y="1560"/>
     </wire>
     <wire>
-      <p1 x="400" y="2180"/>
-      <p2 x="400" y="2320"/>
+      <p1 x="400" y="1240"/>
+      <p2 x="400" y="1320"/>
     </wire>
     <wire>
       <p1 x="1040" y="2020"/>
@@ -1327,10 +1331,6 @@
     <wire>
       <p1 x="280" y="1180"/>
       <p2 x="280" y="1320"/>
-    </wire>
-    <wire>
-      <p1 x="280" y="2240"/>
-      <p2 x="280" y="2320"/>
     </wire>
     <wire>
       <p1 x="1560" y="1220"/>
@@ -1421,16 +1421,20 @@
       <p2 x="940" y="2220"/>
     </wire>
     <wire>
+      <p1 x="-560" y="1480"/>
+      <p2 x="-560" y="1560"/>
+    </wire>
+    <wire>
       <p1 x="1200" y="1780"/>
       <p2 x="1200" y="1800"/>
     </wire>
     <wire>
-      <p1 x="440" y="1180"/>
-      <p2 x="440" y="1320"/>
+      <p1 x="-440" y="1420"/>
+      <p2 x="-440" y="1560"/>
     </wire>
     <wire>
-      <p1 x="440" y="2240"/>
-      <p2 x="440" y="2320"/>
+      <p1 x="440" y="1180"/>
+      <p2 x="440" y="1320"/>
     </wire>
     <wire>
       <p1 x="1080" y="1020"/>
@@ -1453,12 +1457,12 @@
       <p2 x="1340" y="2560"/>
     </wire>
     <wire>
-      <p1 x="320" y="1240"/>
-      <p2 x="320" y="1320"/>
+      <p1 x="-320" y="1480"/>
+      <p2 x="-320" y="1560"/>
     </wire>
     <wire>
-      <p1 x="320" y="2180"/>
-      <p2 x="320" y="2320"/>
+      <p1 x="320" y="1240"/>
+      <p2 x="320" y="1320"/>
     </wire>
     <wire>
       <p1 x="960" y="1820"/>
@@ -1487,10 +1491,6 @@
     <wire>
       <p1 x="1220" y="1480"/>
       <p2 x="1220" y="1560"/>
-    </wire>
-    <wire>
-      <p1 x="580" y="2200"/>
-      <p2 x="580" y="2240"/>
     </wire>
     <wire>
       <p1 x="200" y="1180"/>
@@ -1533,6 +1533,10 @@
       <p2 x="980" y="2300"/>
     </wire>
     <wire>
+      <p1 x="-600" y="1420"/>
+      <p2 x="-600" y="1560"/>
+    </wire>
+    <wire>
       <p1 x="1240" y="1020"/>
       <p2 x="1240" y="1160"/>
     </wire>
@@ -1545,8 +1549,8 @@
       <p2 x="220" y="1560"/>
     </wire>
     <wire>
-      <p1 x="480" y="2180"/>
-      <p2 x="480" y="2320"/>
+      <p1 x="-480" y="1480"/>
+      <p2 x="-480" y="1560"/>
     </wire>
     <wire>
       <p1 x="480" y="1240"/>
@@ -1565,8 +1569,8 @@
       <p2 x="1380" y="2300"/>
     </wire>
     <wire>
-      <p1 x="360" y="2240"/>
-      <p2 x="360" y="2320"/>
+      <p1 x="-360" y="1420"/>
+      <p2 x="-360" y="1560"/>
     </wire>
     <wire>
       <p1 x="360" y="1180"/>
@@ -1607,10 +1611,6 @@
     <wire>
       <p1 x="-240" y="1040"/>
       <p2 x="-240" y="1080"/>
-    </wire>
-    <wire>
-      <p1 x="240" y="2180"/>
-      <p2 x="240" y="2320"/>
     </wire>
     <wire>
       <p1 x="240" y="1240"/>
